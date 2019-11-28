@@ -1,3 +1,7 @@
-from setuptools import setup
+# -*- coding: utf-8 -*-
 
-setup()
+from setuptools import setup
+import versioneer
+
+setup(version=versioneer.get_version(),
+      cmdclass=versioneer.get_cmdclass())
