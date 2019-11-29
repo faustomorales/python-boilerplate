@@ -8,6 +8,9 @@ ipython = "*"
 jupyterlab = "*"
 numpy = "*"
 matplotlib = "*"
+sphinx = "==1.8.3"
+m2r = "==0.2.1"
+sphinx_rtd_theme = "==0.4.2"
 
 [packages]
 boilerplate = {editable = true,path = "."}
