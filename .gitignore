@@ -1,0 +1,20 @@
+# Temporary notebooks
+notebooks
+
+# MacOS
+.DS_Store
+
+# Build artifacts
+*.egg-info
+build
+_build
+dist
+
+# Versioneer
+versioneer.pyc
+
+# Caches for testing
+.mypy_cache
+.pytest_cache
+__pycache__
+.venv
