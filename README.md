@@ -1,4 +1,4 @@
-# boilerplate
+# boilerplate [![CircleCI](https://circleci.com/gh/faustomorales/python-boilerplate.svg?style=svg)](https://circleci.com/gh/faustomorales/python-boilerplate)
 This is a boilerplate Python project with support for:
 
 - Documentation with `sphinx`
@@ -7,6 +7,7 @@ This is a boilerplate Python project with support for:
 - Formatting with `yapf`
 - Unit testing with `pytest`
 - Hosting documentation with `readthedocs`
+- Automatic checks with `CircleCI`
 - Running local experimentation notebooks with `jupyterlab`
 - Automatic versioning with `versioneer`
 
