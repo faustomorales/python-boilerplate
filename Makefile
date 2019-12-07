@@ -11,7 +11,8 @@ build:
 	docker build --rm --force-rm -t $(IMAGE_NAME) .
 	@-docker volume rm $(VOLUME_NAME)
 init:
-	PIPENV_VENV_IN_PROJECT=true pipenv install --dev --skip-lock
+	@-mkdir .venv
+	pipenv install --dev --skip-lock
 	pipenv run pip install -r docs/requirements.txt
 command-lab-server:
 	pipenv run jupyter lab $(JUPYTER_OPTIONS)
