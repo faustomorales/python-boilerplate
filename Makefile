@@ -1,7 +1,7 @@
 PACKAGE_NAME = boilerplate
 IMAGE_NAME = $(PACKAGE_NAME)
 VOLUME_NAME = $(IMAGE_NAME)_venv
-DOCKER_ARGS = -v $(PWD):/usr/src -v $(VOLUME_NAME):/usr/src/.venv --rm
+DOCKER_ARGS = -it -v $(PWD):/usr/src -v $(VOLUME_NAME):/usr/src/.venv --rm
 IN_DOCKER = docker run $(DOCKER_ARGS) $(IMAGE_NAME) pipenv run
 NOTEBOOK_PORT ?= 5000
 JUPYTER_OPTIONS := --ip=0.0.0.0 --port $(NOTEBOOK_PORT) --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
@@ -30,6 +30,8 @@ format:
 format_check:
 	$(IN_DOCKER) yapf --recursive --diff --exclude=boilerplate/_version.py tests boilerplate\
 		|| (echo '\nUnexpected format.' && exit 1)
+bash:
+	$(IN_DOCKER) bash
 precommit:
 	make build
 	make lint_check
