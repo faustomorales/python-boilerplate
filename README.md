@@ -6,7 +6,7 @@ This is a boilerplate Python project with support for:
 - Linting with `pylint`
 - Formatting with `yapf`
 - Unit testing with `pytest`
-- Hosting documentation with `readthedocs`
+- Hosting [public documentation](https://faustomorales-python-boilerplate.readthedocs.io/en/latest/) with `readthedocs`
 - Automatic checks with `CircleCI`
 - Running local experimentation notebooks with `jupyterlab`
 - Automatic versioning with `versioneer`
