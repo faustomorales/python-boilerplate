@@ -1,4 +1,4 @@
-# boilerplate [![CircleCI](https://circleci.com/gh/faustomorales/python-boilerplate.svg?style=svg)](https://circleci.com/gh/faustomorales/python-boilerplate)
+# boilerplate ![ci](https://github.com/faustomorales/python-boilerplate/workflows/ci/badge.svg)
 This is a boilerplate Python project with support for:
 
 - Documentation with `sphinx`
