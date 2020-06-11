@@ -7,7 +7,7 @@ This is a boilerplate Python project with support for:
 - Formatting with `yapf`
 - Unit testing with `pytest`
 - Hosting [public documentation](https://faustomorales-python-boilerplate.readthedocs.io/en/latest/) with `readthedocs`
-- Automatic checks with `CircleCI`
+- Automatic checks with GitHub Workflows
 - Running local experimentation notebooks with `jupyterlab`
 - Automatic versioning with `versioneer`
 
